@@ -1,6 +1,6 @@
 # Codebasics-Excel-2-
 
-In this Dataset, I did VLOOKUP, INDEXMATCH,and  XLOOKUP to retrieve the data from one table to another table
+In this Dataset, I did VLOOKUP, INDEXMATCH, and  XLOOKUP to retrieve the data from one table to another table
 
 ### VLOOKUP FUNCTION
 
@@ -40,3 +40,6 @@ The syntax of the XLOOKUP() function is:
 # XLOOKUP(lookup_value, lookup_array, return_array, [if_not_found], [match_mode])
 
 Unlike VLOOKUP, which only searches in the leftmost column of a table, XLOOKUP is capable of searching in any column.
+
+# For Not Available
+=IFNA(INDEX(Financials, MATCH(Movies7[@[movie_id]:[movie_id]], Financials[[movie_id]:[movie_id]],0),2),"Not Available")
